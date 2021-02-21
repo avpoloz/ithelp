@@ -361,4 +361,13 @@
             <property name="optional" value="true"/>
         </module>
     </module>
+
+    <module name="RegexpMultiline">
+        <property name="format" value="^([^\n ]+ )*(class|interface|enum) [^{]*\{\n[^\n}]"/>
+        <property name="message" value="Leave empty row after class/interface/enum definition!"/>
+    </module>
+    <module name="RegexpMultiline">
+        <property name="format" value="[^\n{]\n\}\n"/>
+        <property name="message" value="Leave empty row before end of class/interface/enum!"/>
+    </module>
 </module>
